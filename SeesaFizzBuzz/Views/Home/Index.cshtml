@@ -1,0 +1,44 @@
+﻿
+<h2 class='text-center'>FizzBuzz App</h2>
+<div class="container text-center">
+    This is the FizzBuzzer. It was Written with If Else staments and with Switch Case statements.
+    In its early development, the If statements outperformed the Switch. After tweaking the desired
+    output, it came to a point where the Switch outperformed the Ifs. It was decided to stick with 
+    the Switch for Performance. It was also decided to make the FizzBuzzer more dynamic in its
+    output by allowing it to take any number. To keep it neat, the FizzBuzzer will output to the next
+    multiple of 5 for any number that is not divisible by 5. Feel free to view the Switch and If 
+    statements in the Fizzbuzzer.cs file. The If statements were removed and commented at the
+    bottom of the file. 
+    <br />
+    Enjoy the FizzBuzzer.
+</div>
+
+<br />
+<div class="container d-flex justify-content-center align-items-center">
+    <div id="inputForm" class="p-5 rounded">
+        <form method="post">
+            <div class="mb-3 d-flex flex-column justify-content-center align-items-center">
+                <label for="numberInput" class="form-label">Enter the number you would like to FizzBuzz:</label>
+                <input type="number" class="form-control bg-light-blue" name="numberInput" id="numberInput" max="2000" min="1" style="height: 50px" />
+            </div>
+            <div class="mb-3 d-flex justify-content-center">
+                <button type="submit" name="submitButton" class="btn btn-primary px-5 py-2">Fizz It</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+   
+        @Html.Raw(ViewBag.Result)
+    
+</div>
+
+
+@{
+    /*
+    <div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+*/
+}
