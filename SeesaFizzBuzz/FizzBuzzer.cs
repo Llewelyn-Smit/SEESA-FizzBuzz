@@ -33,11 +33,11 @@ namespace SeesaFizzBuzz
                             //Lowest Common Multiple For 3 And 5 is 15, Injects FizzBuzz
                             //This Adds A Row When Not End Of FizzBuzz
                             case int n when ((n % 15 == 0) && (i != FizzBuzzNumber)):
-                                stringAdd("<div class='col-2 rounded numberWrap bg-primary text-center'>FizzBuzz</div></div><div class='row justify-content-center'>");
+                                stringAdd("<div class='col-2 rounded numberWrap bg-primary text-center small'>FizzBuzz</div></div><div class='row justify-content-center'>");
                                 break;
                             //This Closes Final Row If End Of FizzBuzz
                             case int n when ((n % 15 == 0) && (i == FizzBuzzNumber)):
-                                stringAdd("<div class='col-2 rounded numberWrap bg-primary text-center'>FizzBuzz</div></div>");
+                                stringAdd("<div class='col-2 rounded numberWrap bg-primary text-center small'>FizzBuzz</div></div>");
                                 break;
                                 // Multiple of 3 Cannot End Row
                             case int n when (n % 3 == 0):

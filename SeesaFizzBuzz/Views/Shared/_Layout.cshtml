@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/SeesaFizzBuzz.styles.css" asp-append-version="true" />
+ <link href="~/assets/css/style.css" rel="stylesheet">
+     <link href="~/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+     <link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
 </head>
-<body>
+<body >
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
@@ -38,15 +43,16 @@
             @RenderBody()
         </main>
     </div>
-
+    <div class="mt-5"></div>
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - SEESA-FizzBuzz - <a asp-area="" asp-controller="Home" asp-action="DevProfile">Llewlyn Smit</a>
+            &copy; 2023 - SEESA-FizzBuzz - <a asp-area="" asp-controller="Home" asp-action="DevProfile">Llewelyn Smit</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 </html>
